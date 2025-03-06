@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; // Aligns content to start
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    //padding-top: 1vh; // Moves content slightly upward
+  
+    h1 {
+      font-size: 4rem;
+      color: #333;
+    }
+  
+    img {
+      width: 425px;
+      margin-top: 15px;
+    }
+  }
+  

@@ -1,6 +1,9 @@
 <div class="container">
-  <h1>{{ message }} {{ userName }}</h1>
-   
+  <h1>{{ message }} <span *ngIf="userName">{{ userName }}</span> from BridgeLabz</h1>
+
   <img [src]="logoUrl" alt="BridgeLabz Logo" (click)="openBridgeLabz()">
-  <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+
+  <input type="text" [(ngModel)]="userName" (input)="validateUserName()" placeholder="Enter your name">
+
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
 </div>
